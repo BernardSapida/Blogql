@@ -1,18 +1,15 @@
-// import Post from './Post';
-// import PostList from './PostList';
-
-const Home = { template: '<div>Home</div>' }
-const About = { template: '<div>About</div>' }
+import Post from './post/Post';
+import PostList from './post/PostList';
 
 export default [
     {
         path: '/',
         name: 'index',
-        component: Home 
+        component: Post 
     },
     {
-        path: '/about',
+        path: '/post',
         name: 'post',
-        component: About
+        component: PostList
     },
 ]
