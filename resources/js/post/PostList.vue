@@ -1,5 +1,5 @@
 <template>
-    <div id="id" class="container mt-5 mb-2">
+    <div class="container mt-5 mb-2">
         <h2 class="text-4xl">All Posts</h2>
         <p v-if="$apollo.loading">Loading posts...</p>
         <div class="row gap-2" v-else>
@@ -18,7 +18,7 @@
         },  
         apollo: {
             posts: gql`
-                {
+                query {
                     posts {
                         id
                         title

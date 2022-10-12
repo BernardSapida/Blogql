@@ -23,6 +23,7 @@ class UserFactory extends Factory
             'email_verified_at' => now(),
             'password' => fake()->password(),
             'remember_token' => Str::random(10),
+            'avatar' => collect([ 'default.jpg', 'developer.jpg', 'stella.jpg' ])->random()
         ];
     }
 

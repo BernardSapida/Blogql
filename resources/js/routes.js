@@ -5,11 +5,11 @@ export default [
     {
         path: '/',
         name: 'index',
-        component: Post 
+        component: PostList
     },
     {
-        path: '/post',
+        path: '/post/:id',
         name: 'post',
-        component: PostList
+        component: Post
     },
 ]

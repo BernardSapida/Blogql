@@ -7559,6 +7559,58 @@ function __classPrivateFieldSet(receiver, privateMap, value) {
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/post/Post.vue?vue&type=script&lang=js&":
+/*!*****************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/post/Post.vue?vue&type=script&lang=js& ***!
+  \*****************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var graphql_tag__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! graphql-tag */ "./node_modules/graphql-tag/lib/index.js");
+var _templateObject;
+
+function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(0); } return Object.freeze(Object.defineProperties(strings, { raw: { value: Object.freeze(raw) } })); }
+
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  apollo: {
+    post: {
+      query: (0,graphql_tag__WEBPACK_IMPORTED_MODULE_0__["default"])(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n                    query($id: ID!) {\n                        post(id: $id) {\n                            id\n                            title\n                            content\n                            author {\n                                id\n                                name\n                                avatar\n                            }\n                            topic {\n                                name\n                                slug\n                            }\n                        }\n                    }\n                "]))),
+      variables: function variables() {
+        return {
+          id: this.$route.params.id
+        };
+      }
+    }
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/post/PostList.vue?vue&type=script&lang=js&":
 /*!*********************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/post/PostList.vue?vue&type=script&lang=js& ***!
@@ -7593,7 +7645,7 @@ function _taggedTemplateLiteral(strings, raw) { if (!raw) { raw = strings.slice(
     PostListItem: _PostListItem__WEBPACK_IMPORTED_MODULE_0__["default"]
   },
   apollo: {
-    posts: (0,graphql_tag__WEBPACK_IMPORTED_MODULE_1__["default"])(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n                {\n                    posts {\n                        id\n                        title\n                        lead\n                        author {\n                            name\n                        }\n                    }\n                }\n            "])))
+    posts: (0,graphql_tag__WEBPACK_IMPORTED_MODULE_1__["default"])(_templateObject || (_templateObject = _taggedTemplateLiteral(["\n                query {\n                    posts {\n                        id\n                        title\n                        lead\n                        author {\n                            name\n                        }\n                    }\n                }\n            "])))
   }
 });
 
@@ -7610,6 +7662,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
 //
 //
 //
@@ -7683,11 +7737,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ([{
   path: '/',
   name: 'index',
-  component: _post_Post__WEBPACK_IMPORTED_MODULE_0__["default"]
-}, {
-  path: '/post',
-  name: 'post',
   component: _post_PostList__WEBPACK_IMPORTED_MODULE_1__["default"]
+}, {
+  path: '/post/:id',
+  name: 'post',
+  component: _post_Post__WEBPACK_IMPORTED_MODULE_0__["default"]
 }]);
 
 /***/ }),
@@ -11530,15 +11584,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var _Post_vue_vue_type_template_id_1e75d0c1___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Post.vue?vue&type=template&id=1e75d0c1& */ "./resources/js/post/Post.vue?vue&type=template&id=1e75d0c1&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Post.vue?vue&type=script&lang=js& */ "./resources/js/post/Post.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 ;
-var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Post_vue_vue_type_template_id_1e75d0c1___WEBPACK_IMPORTED_MODULE_0__.render,
   _Post_vue_vue_type_template_id_1e75d0c1___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
   false,
@@ -11630,6 +11686,22 @@ var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__
 if (false) { var api; }
 component.options.__file = "resources/js/post/PostListItem.vue"
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/post/Post.vue?vue&type=script&lang=js&":
+/*!*************************************************************!*\
+  !*** ./resources/js/post/Post.vue?vue&type=script&lang=js& ***!
+  \*************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./Post.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/post/Post.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Post_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 
@@ -11732,16 +11804,66 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c(
+    "div",
+    {
+      staticClass: "container mx-auto mt-5 mb-2",
+      staticStyle: { width: "700px" },
+    },
+    [
+      _vm.$apollo.loading
+        ? _c("p", [_vm._v("Loading posts...")])
+        : _c("div", [
+            _c("p", { staticClass: "mt-5" }, [
+              _vm._v(
+                "By " +
+                  _vm._s(_vm.post.author.name) +
+                  " in " +
+                  _vm._s(_vm.post.topic.name) +
+                  " • 3 hours ago"
+              ),
+            ]),
+            _vm._v(" "),
+            _c("h1", { staticClass: "my-4" }, [
+              _c("strong", [_vm._v(_vm._s(_vm.post.title))]),
+            ]),
+            _vm._v(" "),
+            _c("p", [_vm._v(_vm._s(_vm.post.content))]),
+            _vm._v(" "),
+            _c("div", { staticClass: "row my-4 align-items-center" }, [
+              _c("div", { staticClass: "col-auto" }, [
+                _c("img", {
+                  staticClass: "rounded-circle",
+                  attrs: {
+                    src: "/images/" + _vm.post.author.avatar,
+                    height: "75",
+                    width: "75",
+                    alt: "",
+                  },
+                }),
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col-auto" }, [
+                _c("h5", { staticClass: "m-0" }, [
+                  _c("strong", [
+                    _vm._v("Written by " + _vm._s(_vm.post.author.name)),
+                  ]),
+                ]),
+                _vm._v(" "),
+                _c("p", { staticClass: "m-0" }, [
+                  _vm._v(
+                    "Published in " +
+                      _vm._s(_vm.post.topic.name) +
+                      " on Dec 17, 2022"
+                  ),
+                ]),
+              ]),
+            ]),
+          ]),
+    ]
+  )
 }
-var staticRenderFns = [
-  function () {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", [_c("h1", [_vm._v("Hello World 2")])])
-  },
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -11764,32 +11886,28 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "div",
-    { staticClass: "container mt-5 mb-2", attrs: { id: "id" } },
-    [
-      _c("h2", { staticClass: "text-4xl" }, [_vm._v("All Posts")]),
-      _vm._v(" "),
-      _vm.$apollo.loading
-        ? _c("p", [_vm._v("Loading posts...")])
-        : _c(
-            "div",
-            { staticClass: "row gap-2" },
-            _vm._l(_vm.posts, function (post) {
-              return _c(
-                "PostListItem",
-                {
-                  key: post.id,
-                  staticClass: "col-3 mx-auto",
-                  attrs: { post: post },
-                },
-                [_vm._v(_vm._s(post.id) + " " + _vm._s(post.title))]
-              )
-            }),
-            1
-          ),
-    ]
-  )
+  return _c("div", { staticClass: "container mt-5 mb-2" }, [
+    _c("h2", { staticClass: "text-4xl" }, [_vm._v("All Posts")]),
+    _vm._v(" "),
+    _vm.$apollo.loading
+      ? _c("p", [_vm._v("Loading posts...")])
+      : _c(
+          "div",
+          { staticClass: "row gap-2" },
+          _vm._l(_vm.posts, function (post) {
+            return _c(
+              "PostListItem",
+              {
+                key: post.id,
+                staticClass: "col-3 mx-auto",
+                attrs: { post: post },
+              },
+              [_vm._v(_vm._s(post.id) + " " + _vm._s(post.title))]
+            )
+          }),
+          1
+        ),
+  ])
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -11818,14 +11936,19 @@ var render = function () {
     "div",
     { staticClass: "border p-3 rounded", staticStyle: { width: "18rem" } },
     [
-      _c("h4", [_c("strong", [_vm._v(_vm._s(_vm.post.title))])]),
+      _c(
+        "router-link",
+        { attrs: { to: { name: "post", params: { id: _vm.post.id } } } },
+        [_c("h4", [_c("strong", [_vm._v(_vm._s(_vm.post.title))])])]
+      ),
       _vm._v(" "),
       _c("p", { staticClass: "text-muted" }, [_vm._v(_vm._s(_vm.post.lead))]),
       _vm._v(" "),
       _c("p", { staticClass: "text-right" }, [
         _vm._v("By " + _vm._s(_vm.post.author.name) + " 3 hours ago"),
       ]),
-    ]
+    ],
+    1
   )
 }
 var staticRenderFns = []
