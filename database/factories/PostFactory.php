@@ -22,7 +22,7 @@ class PostFactory extends Factory
             'lead' => fake()->text(200),
             'content' => fake()->paragraphs(10, true),
             'topic_id' => random_int(1, 3),
-            'author_id' => random_int(1, 3),
+            'author_id' => random_int(1, 20),
         ];
     }
 }
